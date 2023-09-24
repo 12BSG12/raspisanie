@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/assets/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Расписание ЧФ ПНИПУ</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="bg">
+    <div class="container">
+      <header class="header">
+        <img src="/assets/logo.svg" alt="logo" />
+        <h1>
+          Чайковский филиал федерального государственного автономного образовательного учреждения
+          высшего образования "Пермский национальный исследовательский политехнический университет"
+        </h1>
+      </header>
+      <div class="page">
+        <div class="page__list">
+          <div class="page__list-content">
+            <div class="burger">
+              <span>line 1</span>
+              <span>line 2</span>
+              <span>line 3</span>
+              <span>line 4</span>
+            </div>
+            <ul class="menu">
+              <div class="menu__conetent">
+                <div class="menu__wrapper">
+                  <span>C</span>
+                  <input type="date" class="menu__dateIn" />
+                </div>
+                <div class="menu__wrapper">
+                  <span>По</span>
+                  <input type="date" class="menu__dateOut" />
+                </div>
+                <div class="menu__wrapper">
+                  <span>Преподаватели</span>
+                  <input type="text" list="listTeacher" class="menu__list" />
+                  <datalist id="listTeacher"></datalist>
+                </div>
+                <div class="menu__wrapper">
+                  <span>Группы</span>
+                  <input type="text" list="listGroup" class="menu__list" />
+                  <datalist id="listGroup"></datalist>
+                </div>
+              </div>
+              <input class="menu__btn" type="button" value="Сформировать" />
+            </ul>
+            <h2 class="page__list-title">Расписание занятий</h2>
+            <hr />
+            <div class="table-wrapper">
+              <table class="table">
+                <thead class="table-head">
+                  <tr>
+                    <th>Дата</th>
+                    <th>Начало</th>
+                    <th>Окончание</th>
+                    <th>Пара</th>
+                    <th>Группа</th>
+                    <th>Дисциплина</th>
+                    <th>Ауд.</th>
+                    <th>Преподаватель</th>
+                  </tr>
+                </thead>
+                <tbody class="table-body"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="footer__row">
+          <div class="footer__row-item">
+            <h3>Приемная-комиссия ЧФ ПНИПУ</h3>
+            <ul>
+              <li>
+                <a href="tel:+73424134507">+7 (34241) 3-45-07</a>
+              </li>
+              <li>
+                <a href="mailto:ok@pnipu.ru?subject=Вопрос">ok@pnipu.ru</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__row-item">
+            <h3>Полезные ссылки</h3>
+            <ul>
+              <li>
+                <a href="https://vk.com/chf_pnipu" target="_blank">Адрес в VK</a>
+              </li>
+              <li>
+                <a href="#">Адрес данной страницы в интернет</a>
+              </li>
+              <li>
+                <a href="http://www.pnipu.ru/index.php/" target="_blank">Сайт ЧФ ПНИПУ</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__copyright">
+          © 2023. Сервис разработан и поддерживается Центром информационных и экономических
+          технологий ЧФ ПНИПУ.
+        </div>
+      </footer>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
